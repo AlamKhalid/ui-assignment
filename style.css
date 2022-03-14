@@ -26,6 +26,10 @@
             text-decoration: none;
         }
         
+        .hamburger-li {
+            display: none;
+        }
+        
         .nav-link:hover {
             text-decoration: none;
         }
@@ -419,6 +423,7 @@
             column-gap: 60px;
             justify-content: center;
             margin-bottom: 100px;
+            flex-wrap: wrap;
         }
         
         .footer-menu {
@@ -459,4 +464,121 @@
         
         .footer-copyright {
             color: #9ca0a6;
+        }
+        /* Height adjustment */
+        
+        @media screen and (max-height: 420px) {
+            .hero {
+                height: 100vh;
+            }
+        }
+        /* Tablet View */
+        
+        @media screen and (max-width: 992px) {
+            .hero-content {
+                position: static;
+                align-items: center;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+            .service {
+                max-width: 45%;
+            }
+            .about-me,
+            .about-bars {
+                width: 45%;
+            }
+            .review-description {
+                width: 75%;
+            }
+        }
+        /* Mobile View */
+        
+        @media screen and (max-width: 700px) {
+            .nav-link {
+                display: none;
+            }
+            .hero {
+                background-position: 73%;
+            }
+            .nav-bar {
+                column-gap: 50px;
+            }
+            .hero-content {
+                width: 80%;
+                margin: 0;
+                margin-left: 20px;
+                align-items: flex-start;
+            }
+            .hamburger-li {
+                display: block;
+            }
+            .hamburger-icon {
+                color: white;
+                font-size: 2rem;
+            }
+            .services {
+                padding: 30px 0;
+                margin-bottom: 20px;
+            }
+            .service-catalog {
+                flex-direction: column;
+                align-items: center;
+                column-gap: 0;
+            }
+            .service {
+                max-width: 90%;
+            }
+            .about {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-me,
+            .about-bars {
+                width: 90%
+            }
+            .about-bars {
+                margin-top: 20px;
+            }
+            .reviews {
+                padding: 30px 0;
+            }
+            .reviews-heading {
+                letter-spacing: normal;
+            }
+            .review-description {
+                width: 90%;
+            }
+            .blog {
+                padding-top: 30px;
+                padding-bottom: 50px;
+            }
+            .blog-posts {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 50px;
+            }
+            .blog-post {
+                max-width: 90%;
+            }
+            .contact {
+                padding: 30px 0;
+            }
+            .contact-form {
+                width: 90%;
+            }
+            .footer-section {
+                padding: 30px 0;
+            }
+            .footer-menus {
+                flex-direction: column;
+                row-gap: 30px;
+                margin-left: 20px;
+            }
+            .footer-menu {
+                max-width: 90%;
+            }
+            .footer-credits {
+                margin: 0 20px;
+            }
         }
